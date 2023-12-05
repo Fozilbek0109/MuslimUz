@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fargment.QazoFragment"
+    android:gravity="center">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="QOLDIRILGAN NAMOZLAR"
+    android:gravity="center"
+    android:textColor="@color/black"
+    android:textSize="30sp"
+    android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="10dp"
+                app:cardBackgroundColor="@color/teal_200"
+                app:cardCornerRadius="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:text="BOMDOD"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fb_bomdod_p"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/baseline_add_24"/>
+
+            <TextView
+                android:id="@+id/bomdod_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fb_bomdod_m"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/baseline_horizontal_rule_24"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="10dp"
+                app:cardBackgroundColor="@color/teal_200"
+                app:cardCornerRadius="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:text="PESHIN"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="55dp"
+                android:id="@+id/fb_peshin_p"
+                android:layout_height="55dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/baseline_add_24"/>
+
+            <TextView
+                android:id="@+id/peshin_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="55dp"
+                android:id="@+id/fb_peshin_m"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/baseline_horizontal_rule_24"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="10dp"
+                app:cardBackgroundColor="@color/teal_200"
+                app:cardCornerRadius="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:text="ASR"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="55dp"
+                android:id="@+id/fb_asr_p"
+                android:layout_height="55dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/baseline_add_24"/>
+
+            <TextView
+                android:id="@+id/asr_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="55dp"
+                android:id="@+id/fb_asr_m"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/baseline_horizontal_rule_24"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="10dp"
+                app:cardBackgroundColor="@color/teal_200"
+                app:cardCornerRadius="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:text="SHOM"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fb_shom_p"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/baseline_add_24"/>
+
+            <TextView
+                android:id="@+id/shom_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="55dp"
+                android:id="@+id/fb_shom_m"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/baseline_horizontal_rule_24"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="10dp"
+                app:cardBackgroundColor="@color/teal_200"
+                app:cardCornerRadius="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:text="HUFTON"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="55dp"
+                android:id="@+id/fb_hufton_p"
+                android:layout_height="55dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/baseline_add_24"/>
+
+            <TextView
+                android:id="@+id/hufton_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="55dp"
+                android:id="@+id/fb_hufton_m"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/baseline_horizontal_rule_24"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="10dp"
+                app:cardBackgroundColor="@color/teal_200"
+                app:cardCornerRadius="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:text="VITR"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="55dp"
+                android:id="@+id/fb_vitr_p"
+                android:layout_height="55dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/baseline_add_24"/>
+
+            <TextView
+                android:id="@+id/vitr_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="55dp"
+                android:id="@+id/fb_vitr_m"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/baseline_horizontal_rule_24"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

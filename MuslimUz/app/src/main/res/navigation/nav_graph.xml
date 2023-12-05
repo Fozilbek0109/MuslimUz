@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="uz.coder.muslimuz.fargment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_tasbihFragment"
+            app:destination="@id/tasbihFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tasbihFragment"
+        android:name="uz.coder.muslimuz.fargment.TasbihFragment"
+        android:label="fragment_tasbih"
+        tools:layout="@layout/fragment_tasbih" />
+    <fragment
+        android:id="@+id/alAsmaAlHusnaFragment"
+        android:name="uz.coder.muslimuz.fargment.AlAsmaAlHusnaFragment"
+        android:label="fragment_al_asma_al_husna"
+        tools:layout="@layout/fragment_al_asma_al_husna" />
+    <activity
+        android:id="@+id/itemActivity"
+        android:name="uz.coder.muslimuz.ui.ItemActivity"
+        android:label="activity_item"
+        tools:layout="@layout/activity_item" />
+    <fragment
+        android:id="@+id/qazoFragment"
+        android:name="uz.coder.muslimuz.fargment.QazoFragment"
+        android:label="fragment_qazo"
+        tools:layout="@layout/fragment_qazo" />
+    <fragment
+        android:id="@+id/quranFragment"
+        android:name="uz.coder.muslimuz.fargment.QuranFragment"
+        android:label="fragment_quran"
+        tools:layout="@layout/fragment_quran" />
+
+    <activity
+        android:id="@+id/suraActivity"
+        android:name="uz.coder.muslimuz.ui.SuraActivity"
+        android:label="activity_sura"
+        tools:layout="@layout/activity_sura" />
+   
+
+</navigation>
