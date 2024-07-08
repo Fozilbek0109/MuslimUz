@@ -13,10 +13,19 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 import uz.coder.muslimuz.R;
 import uz.coder.muslimuz.adapter.DateAdapterFragmentPj;
 import uz.coder.muslimuz.databinding.FragmentHomeBinding;
 import uz.coder.muslimuz.model.DateModel;
+import uz.coder.muslimuz.model.date.NamozVaqti;
+import uz.coder.muslimuz.model.date.Times;
+import uz.coder.muslimuz.network.connection.ApiClient;
+import uz.coder.muslimuz.network.connection.ApiClient2;
+import uz.coder.muslimuz.network.connection.ApiServise;
+import uz.coder.muslimuz.network.connection.ApiServise2;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -103,13 +112,25 @@ public class HomeFragment extends Fragment {
 
     }
 
-    private void loadData() {
+    private List<DateModel> loadData() {
         dateModelList = new ArrayList<>();
-        dateModelList.add(new DateModel("Hozir", "Bomdod", "04:00"));
-        dateModelList.add(new DateModel("Hozir", "Peshin", "12:57"));
-        dateModelList.add(new DateModel("Hozir", "Asr", "18:14"));
-        dateModelList.add(new DateModel("Hozir", "Shom", "20:39"));
-        dateModelList.add(new DateModel("Hozir", "Hufton", "22:15"));
+        ApiServise apiServise = ApiClient.getRetrofit().create(ApiServise.class);
+        apiServise.getDateSurah().enqueue(new Callback<NamozVaqti>() {
+            @Override
+            public void onResponse(Call<NamozVaqti> call, Response<NamozVaqti> response) {
+                NamozVaqti body = response.body();
+                Times times = body.getTimes();
+
+                dateModelList.add(new DateModel("Quyosh",body.getDate(),times.getQuyosh().toString(),`times))
+            }
+
+            @Override
+            public void onFailure(Call<NamozVaqti> call, Throwable t) {
+
+            }
+        });
+
+
 
     }
 

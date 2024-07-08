@@ -19,6 +19,7 @@ public class AlAsmaUlHusnaAdapter extends  RecyclerView.Adapter<AlAsmaUlHusnaAda
         this.alAsmaAlHusnaModelList = alAsmaAlHusnaModelList;
     }
 
+
     @NonNull
     @Override
     public VH onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
